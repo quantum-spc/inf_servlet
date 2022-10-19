@@ -17,6 +17,16 @@ public class MvcMemberListServlet extends HttpServlet {
 
     private MemberRepository memberRepository = MemberRepository.getInstance();
 
+    /**
+     * @param request  the {@link HttpServletRequest} object that
+     *                 contains the request the client made of
+     *                 the servlet
+     * @param response the {@link HttpServletResponse} object that
+     *                 contains the response the servlet returns
+     *                 to the client
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
