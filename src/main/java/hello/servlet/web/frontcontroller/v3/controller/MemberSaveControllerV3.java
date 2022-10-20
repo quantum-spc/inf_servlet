@@ -13,6 +13,7 @@ public class MemberSaveControllerV3 implements ControllerV3 {
 
     @Override
     public ModelView process(Map<String, String> paramMap) {
+        // paramMap을 사용하여 member빈을 생성하고 model에 넣음
         String username = paramMap.get("username");
         int age = Integer.parseInt(paramMap.get("age"));
 

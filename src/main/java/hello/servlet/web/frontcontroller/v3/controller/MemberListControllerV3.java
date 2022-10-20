@@ -14,6 +14,7 @@ public class MemberListControllerV3 implements ControllerV3 {
 
     @Override
     public ModelView process(Map<String, String> paramMap) {
+        // 파라미터가 없으므로 paramMap 사용 안함
         List<Member> members = memberRepository.findAll();
         ModelView mv = new ModelView("members");
         mv.getModel().put("members", members);

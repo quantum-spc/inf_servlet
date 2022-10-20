@@ -9,6 +9,7 @@ public class MemberFormControllerV3 implements ControllerV3 {
 
     @Override
     public ModelView process(Map<String, String> paramMap) {
+        // 파라미터가 없으므로 paramMap 사용 안함
         return new ModelView("new-form");
     }
 }
